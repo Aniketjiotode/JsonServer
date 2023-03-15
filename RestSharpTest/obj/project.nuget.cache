@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "m5+LPju+/OghUawW/C6SsSjEuDvgQ5PYYXAg61IOgRfl+8I2cN9J/AQ4SUIHvDvzkuNH2+ISmuezQ2MVNELK8w==",
+  "dgSpecHash": "+xF4H23/3lkblBNYQfXOvb1X70X3ucF9lm+lKo+xixgIOcl//slmD835FCf1AxQzBPXr8G9PRtuBFVXFEk5wOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\91962\\Desktop\\cs day3\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\91962\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\91962\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\91962\\.nuget\\packages\\restsharp\\109.0.1\\restsharp.109.0.1.nupkg.sha512",
     "C:\\Users\\91962\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\91962\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",

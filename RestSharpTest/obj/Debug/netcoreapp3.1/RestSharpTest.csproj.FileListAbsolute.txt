@@ -18,3 +18,4 @@ C:\Users\91962\Desktop\cs day3\RestSharpTest\RestSharpTest\obj\Debug\netcoreapp3
 C:\Users\91962\Desktop\cs day3\RestSharpTest\RestSharpTest\obj\Debug\netcoreapp3.1\RestSharpTest.dll
 C:\Users\91962\Desktop\cs day3\RestSharpTest\RestSharpTest\obj\Debug\netcoreapp3.1\RestSharpTest.pdb
 C:\Users\91962\Desktop\cs day3\RestSharpTest\RestSharpTest\obj\Debug\netcoreapp3.1\RestSharpTest.genruntimeconfig.cache
+C:\Users\91962\Desktop\cs day3\RestSharpTest\RestSharpTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

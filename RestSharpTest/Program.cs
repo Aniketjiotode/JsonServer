@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestSharpTestCase;
+using System;
 
 namespace RestSharpTest
 {
@@ -6,7 +7,9 @@ namespace RestSharpTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           Employee employee = new Employee();
+            employee.GetEmpolyee();
+
         }
     }
 }
