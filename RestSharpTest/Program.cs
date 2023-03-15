@@ -10,7 +10,8 @@ namespace RestSharpTest
            Employee employee = new Employee();
             //employee.GetEmpolyee();
             //employee.AddEmpolyee();
-            employee.UpdateEmpolyee();
+            //employee.UpdateEmpolyee();
+            employee.DeleteEmployeeData();
 
         }
     }

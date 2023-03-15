@@ -60,7 +60,12 @@ namespace RestSharpTest
             var output = response.Content;
             Console.WriteLine(output);
         }
-
+        public void DeleteEmployeeData()
+        {
+            RestRequest request = new RestRequest("employees/11", Method.Delete);
+            RestResponse response = client.Execute(request);
+            Console.WriteLine(response.Content);
+        }
            
     }
 }
