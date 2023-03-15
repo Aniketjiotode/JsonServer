@@ -46,12 +46,19 @@ namespace RestSharpTest
             RestResponse response = client.Execute(request);
             var output=response.Content;
             Console.WriteLine(output);
-            //List<Employee> dataResponse = JsonConvert.DeserializeObject<List<Employee>>(response.Content);
-            //foreach (Employee employee in dataResponse)
-            //{
-            //    Console.WriteLine($"Id: {employee.id} Name: {employee.name} salary: {employee.salary}");
-            //}
-
+        }
+        public void UpdateEmpolyee()
+        {
+            RestRequest request = new RestRequest("/employees/5", Method.Put);
+            request.AddHeader("Content-Type", "application/json");
+            JObject jobjectbody = new JObject();
+            jobjectbody.Add("name", "Kapil");
+            jobjectbody.Add("salary", "50000");
+            var bodyy = JsonConvert.SerializeObject(jobjectbody);
+            request.AddBody(bodyy, "application/json");
+            RestResponse response = client.Execute(request);
+            var output = response.Content;
+            Console.WriteLine(output);
         }
 
            

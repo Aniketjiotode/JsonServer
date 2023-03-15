@@ -36,7 +36,7 @@ namespace RestSharpTestCase
             RestResponse response = getEmpolyees();
             Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
             List<Employee> dataResponse = JsonConvert.DeserializeObject<List<Employee>>(response.Content);
-            Assert.AreEqual(7, dataResponse.Count);
+            Assert.AreEqual(11, dataResponse.Count);
         }
         [Test]
         public void givenempolyee_onpost_shouldreturnaddedempolyee()
@@ -53,6 +53,22 @@ namespace RestSharpTestCase
             Employee dataresponse = JsonConvert.DeserializeObject<Employee>(response.Content);
             Assert.AreEqual("adi", dataresponse.name);
             Assert.AreEqual("43000", dataresponse.salary);
+        }
+        [Test]
+        public void givenempolyee_onUpdate_shouldreturnUpdatedempolyee()
+        {
+            RestRequest request = new RestRequest("/employees/5", Method.Put);
+            request.AddHeader("Content-Type", "application/json");
+            JObject jobjectbody = new JObject();
+            jobjectbody.Add("name", "Kapil");
+            jobjectbody.Add("salary", "41000");
+            var bodyy=JsonConvert.SerializeObject(jobjectbody);
+            request.AddBody(bodyy,"application/json");
+            RestResponse response = client.Execute(request);
+            Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
+            Employee dataresponse = JsonConvert.DeserializeObject<Employee>(response.Content);
+            Assert.AreEqual("Kapil", dataresponse.name);
+            Assert.AreEqual("41000", dataresponse.salary);
         }
     }
 }
