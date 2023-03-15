@@ -1735,6 +1735,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
+      "Newtonsoft.Json >= 13.0.3",
       "RestSharp >= 109.0.1",
       "RestSharpTest >= 1.0.0",
       "coverlet.collector >= 3.1.2"
@@ -1798,6 +1799,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.2.1, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "RestSharp": {
             "target": "Package",

@@ -1,4 +1,4 @@
-﻿using RestSharpTestCase;
+﻿
 using System;
 
 namespace RestSharpTest
@@ -9,6 +9,7 @@ namespace RestSharpTest
         {
            Employee employee = new Employee();
             employee.GetEmpolyee();
+            employee.AddEmpolyee();
 
         }
     }

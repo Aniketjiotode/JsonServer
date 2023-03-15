@@ -1,11 +1,13 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace RestSharpTestCase
+namespace RestSharpTest
 {
     internal class Employee
     {
@@ -30,6 +32,26 @@ namespace RestSharpTestCase
                 Console.WriteLine($"Id: {employee.id} Name: {employee.name} salary: {employee.salary}");
             }
      
+        }
+
+        public void AddEmpolyee()
+        {
+            RestRequest request = new RestRequest("/employees", Method.Post);
+            request.AddHeader("Content-Type", "application/json");
+            JObject jobjectbody = new JObject();
+            jobjectbody.Add("name", "sahil");
+            jobjectbody.Add("salary", "35000");
+            var bodyy = JsonConvert.SerializeObject(jobjectbody);
+            request.AddBody(bodyy, "application/json");
+            RestResponse response = client.Execute(request);
+            var output=response.Content;
+            Console.WriteLine(output);
+            //List<Employee> dataResponse = JsonConvert.DeserializeObject<List<Employee>>(response.Content);
+            //foreach (Employee employee in dataResponse)
+            //{
+            //    Console.WriteLine($"Id: {employee.id} Name: {employee.name} salary: {employee.salary}");
+            //}
+
         }
 
            
